@@ -21,11 +21,7 @@ app.get("/buyer",(req,res)=>{
   .catch(err => res.json(err))
 })
 
-// app.get("/buy/bookid",(req,res)=>{
-//   User.find({})
-//   .then(users => res.json(users))
-//   .catch(err => res.json(err))
-// })
+
 
 app.get("/getUser/:id", (req, res) => {
   const id = req.params.id;
